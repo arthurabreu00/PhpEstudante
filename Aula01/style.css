@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.php{
+
+    width: 42%;
+
+}
+
+input,select{
+    margin-top: 12px;
+    padding: 20px;
+}
+
+button{
+    padding: 15px;
+    border: 5px solid blue;
+    background: black;
+    color:white;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.result{
+    background: red;
+    padding: 20px;
+    color:white;
+    font-size: 1.5em;
+}
+
+.res,#res{
+    font-size: 2em;
+}
+
+.res-js{
+    margin-top:20px;
+    width: 42%;
+    background: green;
+    padding: 20px;
+    color:white;
+    font-size: 1.5em;
+}
