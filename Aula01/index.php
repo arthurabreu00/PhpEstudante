@@ -11,11 +11,11 @@
 <form class="php">
     <input type="text" placeholder= "1º Número" name="num1" id="num1"> 
     <input type="text" placeholder= "2º Número" name="num2" id="num2">
-    <select name="operador">
+    <select name="operador" class="operador">
         <option selected>Selecionar</option>
         <option> Soma </option>
         <option> Subtração </option>
-        <option > Divisão </option>
+        <option> Divisão </option>
         <option> Multiplicação </option>
     </select>
     <br> <br>
@@ -58,17 +58,18 @@
         };
 
         echo "</span>"
+        
 
     ?>
 
 
     </div>
 
-    <!--
+    
     <div class="res-js"> 
         Resultado da <span class="nome"></span> JavaScript: <br>
         <span id="res"> </span>
-    </div> -->
+    </div>
 
 
 <script src="script.js"> </script>
