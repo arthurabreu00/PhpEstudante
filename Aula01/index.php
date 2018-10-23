@@ -32,7 +32,7 @@
 
         if($operador !== "Divisão"){
             echo "<br>";
-        };
+        }
 
             switch($operador){
 
