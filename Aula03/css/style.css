@@ -3,3 +3,8 @@
 *{
     font-family: 'Roboto', 'Open Sans', sans-serif;
 }
+
+html{
+    height: 100%;
+    width: 100%;
+}

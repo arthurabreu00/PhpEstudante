@@ -1,7 +1,8 @@
+
 .login{
     background: linear-gradient(to bottom right,#E04F4D,#F09F4F);
     background-repeat: no-repeat;
-    background-size: 100%;
+
 }
 
 .login-nav.navbar.navbar-expand-sm a{
@@ -25,17 +26,32 @@
 .login-form-input{
     display: block;
     margin: 0 auto;
-
+    background: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    width: 250px;
 }
 
-.login-form-a{
-    display: inline;
-    color: white;
-    text-decoration: none;
-    text-align: center;
+.login-form-input::placeholder{
+    color: #f5f5f5;
+}
+
+.login-form-txt {
+    display: flex;
+    justify-content: center;
+    color: #fff;    
+}
+
+.login-form-a a{
+    color: #fff;    
 }
 
 .login-form-submit{
     display: block;
     margin: 0 auto;
+}
+
+.txt-login{
+    font-weight: bold;
+    font-size: 3.5rem;
 }
