@@ -1,0 +1,41 @@
+.login{
+    background: linear-gradient(to bottom right,#E04F4D,#F09F4F);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.login-nav.navbar.navbar-expand-sm a{
+    color:white;
+}
+
+.login-container{
+    color: #fff;
+    margin-top: 8em;
+}
+
+.sub-login{
+    font-size: 0.8em;
+}
+
+.login-form{
+    display: block;
+    margin: 0 auto;
+}
+
+.login-form-input{
+    display: block;
+    margin: 0 auto;
+
+}
+
+.login-form-a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.login-form-submit{
+    display: block;
+    margin: 0 auto;
+}
