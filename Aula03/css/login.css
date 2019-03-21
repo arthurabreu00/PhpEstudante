@@ -25,11 +25,20 @@
 
 .login-form-input{
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     background: transparent;
     border: 1px solid white;
-    padding: 10px;
+    padding: 8px 15px;
     width: 250px;
+    border-radius: 340px;
+    outline: none;
+    color: #fff;
+    
+}
+
+.login-form-input::before{
+   
+    content: "\f007";
 }
 
 .login-form-input::placeholder{
@@ -40,15 +49,36 @@
     display: flex;
     justify-content: center;
     color: #fff;    
+    text-transform: uppercase;
 }
 
-.login-form-a a{
+.login-form-txt a{
     color: #fff;    
+    text-transform: initial;
 }
 
 .login-form-submit{
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
+    background: #DF4E4E;
+    width: 150px;
+    border: 1px solid transparent;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    outline: none;
+    transition: all 200ms linear;
+}
+
+.login-form-submit:active,.login-form-submit:focus{
+    outline: none !important;
+    border: none;
+}
+
+.login-form-submit:hover{
+    background: #F09F4F;
+    outline: none !important;
+    border: none;
 }
 
 .txt-login{
