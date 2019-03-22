@@ -13,14 +13,14 @@
 
   </head>
   <body class="login">
-      <nav class="login-nav navbar navbar-expand-sm container mt-2 navbar-dark">
+      <nav class="login-nav navbar navbar-expand-sm pt-3 pl-5 navbar-dark">
           
-          <a class="navbar-brand" href="#"> Notícias </a>
+          <a class="navbar-brand" href="index.php"> Notícias </a>
           <button class="navbar-toggler d-lg-none mr-sm-2" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
               aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse float-left" id="collapsibleNavId">
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                   <li class="nav-item active">
                       <a class="nav-link" href="#"> Página Inicial <span class="sr-only">(current)</span></a>
@@ -37,6 +37,9 @@
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="#"> Contato </a>
+                  </li>
+                  <li class="nav-item">
+                     <a name="" id="" class="btn btn-primary" href="login.php" role="button"> Login</a> </a>
                   </li>
               </ul>
           </div>
