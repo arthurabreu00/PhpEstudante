@@ -13,7 +13,7 @@
 
   </head>
   <body class="login">
-      <nav class="login-nav navbar navbar-expand-sm pt-3 pl-5 navbar-dark">
+      <nav class="login-nav navbar navbar-expand-sm fixed-top  pt-3 pl-5 navbar-dark">
           
           <a class="navbar-brand" href="index.php"> Notícias </a>
           <button class="navbar-toggler d-lg-none mr-sm-2" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
