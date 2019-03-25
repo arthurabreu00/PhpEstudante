@@ -1,87 +1,65 @@
-html {
-  height: 100%;
+.main-head{
+    height: 150px;
+    background: #FFF;
+   
 }
 
-.login {
-  background: linear-gradient(to bottom right, #e04f4d, #f09f4f);
-}
-.login-nav.navbar.navbar-expand-sm a {
-  color: white;
-}
-
-.login-container {
-  color: #fff;
-  margin-top: 8em;
+.sidenav {
+    height: 100%;
+    background-color: #343a40!important;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 
-.sub-login {
-  font-size: 0.8em;
+
+.main {
+    padding: 0px 10px;
 }
 
-.login-form {
-  display: block;
-  margin: 0 auto;
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
 }
 
-.login-form-input {
-  display: block;
-  margin: 20px auto;
-  background: transparent;
-  border: 1px solid white;
-  padding: 8px 15px;
-  width: 250px;
-  border-radius: 340px;
-  outline: none;
-  color: #fff;
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
 }
 
-.login-form-input::before {
-  content: "\f007";
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        display: block;
+        margin: 6rem auto;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
 }
 
-.login-form-input::placeholder {
-  color: #f5f5f5;
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
 }
 
-.login-form-txt {
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  text-transform: uppercase;
+.login-main-text h2{
+    font-weight: 300;
 }
-
-.login-form-txt a {
-  color: #fff;
-  text-transform: initial;
-}
-
-.login-form-submit {
-  display: block;
-  margin: 10px auto;
-  background: #df4e4e;
-  width: 150px;
-  border: 1px solid transparent;
-  color: #fff;
-  padding: 10px;
-  border-radius: 30px;
-  outline: none;
-  transition: all 200ms linear;
-}
-
-.login-form-submit:active,
-.login-form-submit:focus {
-  outline: none !important;
-  border: none;
-}
-
-.login-form-submit:hover {
-  background: #f09f4f;
-  outline: none !important;
-  border: none;
-}
-
-.txt-login {
-  font-weight: bold;
-  font-size: 3.5rem;
-}
-

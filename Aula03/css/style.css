@@ -12,3 +12,39 @@ html{
 button:focus,button:active{
     outline: none;
 }
+
+body{
+    color :#000;
+}
+
+.mr-6{
+    margin-right: 5rem;
+}
+
+.mt-6{
+    margin-top: 3rem;
+}
+
+.dropdown-menu.show {
+    display: block;
+    width: 270px;
+    position: absolute; 
+    transform: translate3d(-158px, 42px, 0px); 
+    top: 0px; 
+    left: 0px; 
+    will-change: transform;
+}
+
+    @media (max-width: 576px){
+        
+    .dropdown-menu.show {
+        display: block;
+        width: 300px;
+        position: absolute; 
+        transform: translate3d(-10px, 42px, 0px); 
+        top: 0px; 
+        left: 0px; 
+        will-change: transform;
+    }
+
+}

@@ -1,43 +1,49 @@
-      <?php 
+<?php 
         include_once('./includes/header.php')
       ?>
-      
-      <link rel="stylesheet" href="css/login.css">
 
-      <div class="login-container container">
-          <div class="row">
-              <div class="col-sm-5">
-                  <h1 class="txt-login text-justify text-white"> Bem-Vindo </h1>
-                  <p class="sub-login text-white text-justify">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi nostrum totam minima ex nisi. Doloremque explicabo error repellat vel magnam dignissimos ea beatae impedit, mollitia, assumenda et! Obcaecati, illum ad.
-                  </p>
-              </div>
+<link rel="stylesheet" href="css/contact.css">
+<div class="card bg-light mt-6">
+    <article class="card-body mx-auto" >
+        <h4 class="card-title mt-3 text-center">Login</h4>
+   
+        <p>
+            <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+            <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+        </p>
+        <p class="divider-text">
+            <span class="bg-light">OR</span>
+        </p>
+        <form>
 
-              <div class="login-col-sm-7 col-sm-7">
-                  <div class="login-form-txt">
-                      <h2>
-                          Login
-                      </h2>
-                  </div>
-                  <form class="login-form">
-        
-                        <label class="d-none" for="user"> Usuário </label>
-                        <input class="login-form-input" name="user" placeholder="Usuário" />
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                </div>
+                <input name="" class="form-control" placeholder="Usuário" type="text">
+            </div>
             
-                      <label class="d-none" for="password"> Senha </label>
-                      <input class="login-form-input" type="password" name="password" placeholder="Senha" />
-                      <div class="login-form-txt">
-                          <a href="#"> Esqueceu a senha ? </a> 
-                      </div>
-                      <button type="submit" class="login-form-submit"> Login </button>
-                  </form>
-              </div>
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                </div>
+                <input class="form-control" placeholder="Senha" type="password">
+            </div>
 
 
-              
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block"> Entrar </button>
+            </div>
+            <p class="text-center"> <a href=""> Esqueceu a senha ?</a> </p>
+            
+        </form>
+    </article>
+</div> <!-- card.// -->
 
-        </div>
+</div>
+<!--container end.//-->
 
-      <?php  
+
+<?php  
         include_once('./includes/footer.php')
       ?>
