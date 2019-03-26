@@ -310,57 +310,65 @@
     </div>
 
     <div class="row mb-2">
-		        <div class="col-md-12">
-		            <div class="card">
-		                <div class="card-body">
-		                    <div class="row">
-		                        <div class="zoom col-md-4">
-		                            <img src="img/banco_dados.jpg">
-		                        </div>
-		                        <div class="col-md-8">
-		                            <div class="news-title">
-		                                <a href="#"><h5> Banco de dados </h5></a>
-		                            </div>
-		                            <div class="news-content">
-		                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A eum quod dolores cupiditate, optio natus ipsa eveniet cumque quos tempora perferendis ullam iusto recusandae nulla commodi delectus temporibus ea quas. </p>
-		                            </div>
-		                            <div class="news-buttons">
-		                                <button type="button" class="btn btn-outline-danger btn-sm"> Leia mais </button>
-		                            </div>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-	</div>
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="zoom col-md-4">
+                            <img src="img/banco_dados.jpg">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="news-title">
+                                <a href="#">
+                                    <h5> Banco de dados </h5>
+                                </a>
+                            </div>
+                            <div class="news-content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A eum quod dolores
+                                    cupiditate, optio natus ipsa eveniet cumque quos tempora perferendis ullam iusto
+                                    recusandae nulla commodi delectus temporibus ea quas. </p>
+                            </div>
+                            <div class="news-buttons">
+                                <button type="button" class="btn btn-outline-danger btn-sm"> Leia mais </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="row mb-2">
-		        <div class="col-md-12">
-		            <div class="card">
-		                <div class="card-body">
-		                    <div class="row">
-		                        <div class="zoom col-md-4">
-		                            <img src="img/banco_dados.jpg">
-		                        </div>
-		                        <div class="col-md-8">
-		                            <div class="news-title">
-		                                <a href="#"><h5> Banco de dados </h5></a>
-		                            </div>
-		                            <div class="news-content">
-		                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A eum quod dolores cupiditate, optio natus ipsa eveniet cumque quos tempora perferendis ullam iusto recusandae nulla commodi delectus temporibus ea quas. </p>
-		                            </div>
-		                            <div class="news-buttons">
-		                                <button type="button" class="btn btn-outline-danger btn-sm"> Leia mais </button>
-		                            </div>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-	</div>
-
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="zoom col-md-4">
+                            <img src="img/banco_dados.jpg">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="news-title">
+                                <a href="#">
+                                    <h5> Banco de dados </h5>
+                                </a>
+                            </div>
+                            <div class="news-content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A eum quod dolores
+                                    cupiditate, optio natus ipsa eveniet cumque quos tempora perferendis ullam iusto
+                                    recusandae nulla commodi delectus temporibus ea quas. </p>
+                            </div>
+                            <div class="news-buttons">
+                                <button type="button" class="btn btn-outline-danger btn-sm"> Leia mais </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <?php
+
+</div>
+<?php
     include_once('./includes/footer.php')
 ?>

@@ -12,14 +12,12 @@
                   <p class="text-center">Mande uma mensagem para nós</p>
 
                   <form class="contact-form">
-
-
                       <div class="form-group input-group">
                           <label for="name" class="d-none">Nome</label>
                           <div class="input-group-prepend">
                               <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                           </div>
-                          <input require type="text" class="form-control" id="name" name="name"
+                          <input required type="text" class="form-control" id="name" name="name"
                               placeholder="Digite seu nome">
                       </div>
 
@@ -28,7 +26,7 @@
 
                           <div class="input-group-prepend">
                               <span class="input-group-text"> <i class="fas fa-at"></i> </span>
-                          </div> <input require type="email" class="form-control" name="email" id="email"
+                          </div> <input required type="email" class="form-control" name="email" id="email"
                               placeholder="Digite seu e-mail">
                       </div>
 
@@ -38,7 +36,7 @@
 
                           <div class="input-group-prepend">
                               <span class="input-group-text"> <i class="fas fa-id-card"></i> </span>
-                          </div> <input require type="text" class="form-control cpf" name="cpf" id="cpf"
+                          </div> <input required type="text" class="form-control cpf" name="cpf" id="cpf"
                               placeholder="Digite seu CPF">
                       </div>
                       <div class="form-group input-group">
@@ -46,7 +44,7 @@
 
                           <div class="input-group-prepend">
                               <span class="input-group-text"> <i class="fas fa-phone"></i> </span>
-                          </div> <input require type="text" class="form-control" id="telefone" name="telefone"
+                          </div> <input required type="text" class="form-control" id="telefone" name="telefone"
                               placeholder="Digite seu telefone">
                       </div>
                       <div class="form-row">
@@ -55,8 +53,8 @@
                               <div class="input-group-prepend">
                                   <span class="input-group-text"> <i class="fas fa-city    "></i></span>
                               </div>
-                              <select id="estado " class="form-control custom-select estados">
-                                  <option selected> Selecione sua estado </option>
+                              <select required id="estado " class="form-control custom-select estados">
+                                  <option value ="" > Selecione sua estado </option>
                               </select>
                           </div>
 
@@ -67,8 +65,8 @@
                                   <span class="input-group-text"> <i class="fa fa-building" aria-hidden="true"></i> </span>
                               </div>
 
-                              <select id="cidade" class="form-control cidades">
-                                  <option selected> Selecione sua Cidade </option>
+                              <select required id="cidade" class="form-control custom-select cidades">
+                                  <option value ="" > Selecione sua Cidade </option>
                               </select>
                           </div>
 
@@ -81,7 +79,7 @@
 
                           <div class="input-group-prepend">
                               <span class="input-group-text"> <i class="fas fa-mail-bulk"></i> </span>
-                          </div> <input require type="text" class="form-control" id="assunto" name="assunto"
+                          </div> <input required type="text" class="form-control" id="assunto" name="assunto"
                               placeholder="Digite seu assunto">
                       </div>
 
@@ -90,11 +88,11 @@
 
                           <div class="input-group-prepend">
                               <span class="input-group-text"> <i class="fas fa-comment-alt"></i> </span>
-                          </div> <textarea class="form-control" id="consideracoes" name="consideracoes"
-                              rows="3"></textarea>
+                          </div> <textarea required class="form-control" id="consideracoes" name="consideracoes"
+                              rows="3" value="" placeholder="Digite sua mensagem"></textarea>
                       </div>
 
-                      <button type="submit" class="btn btn-primary">Enviar</button>
+                      <button type="submit" class="form-submit btn btn-primary">Enviar</button>
                       <button type="reset" class="btn btn-secondary">Resetar</button>
                   </form>
                   <br>
