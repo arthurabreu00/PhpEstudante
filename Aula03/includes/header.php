@@ -42,7 +42,7 @@
                     </a>
                
                     <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end"  aria-labelledby="navbarDropdownMenuLink">
-					<form class="px-4 py-3">
+					<form class="form-login px-4 py-3">
 						<div class="form-group">
 						  <label> Usuário </label>
 						  <input type="text" class="form-control" placeholder="Usuário">
