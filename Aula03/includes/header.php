@@ -45,11 +45,11 @@
 					<form class="form-login px-4 py-3">
 						<div class="form-group">
 						  <label> Usuário </label>
-						  <input type="text" class="form-control" placeholder="Usuário">
+						  <input type="text" id="user" name="user"  class="form-control" placeholder="Usuário">
 						</div>
 						<div class="form-group">
 						  <label>Senha</label>
-						  <input type="password" class="form-control" placeholder="Senha">
+						  <input type="password"id="password" name="password" class="form-control" placeholder="Senha">
 						</div>
 						<button type="submit" class="btn btn-primary"> Entrar </button>
 						</form>

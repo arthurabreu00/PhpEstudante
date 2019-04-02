@@ -12,20 +12,20 @@
         <p class="divider-text">
             <span class="bg-light">OR</span>
         </p>
-        <form>
+        <form class="form-login">
 
             <div class="form-group input-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                 </div>
-                <input name="" class="form-control" placeholder="Usuário" type="text">
+                <input id="user" name="user"   class="form-control" placeholder="Usuário" type="text">
             </div>
 
             <div class="form-group input-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                 </div>
-                <input class="form-control" placeholder="Senha" type="password">
+                <input class="form-control" id="password" name="password"  placeholder="Senha" type="password">
             </div>
 
 

@@ -1,5 +1,4 @@
 const inputsContact = document.querySelectorAll('.contact-form [require]');
-console.log(inputsContact);
 const formContato = document.querySelector('.contact-form');
 
 
@@ -90,8 +89,6 @@ function validationCpf(){
     return true;
 
 }
-
-
 
 function addAlert(element,txt){
 

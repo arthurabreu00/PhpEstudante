@@ -101,6 +101,7 @@
 
       </div>
 
+      <script src="js/contato.js"></script>
 
       <?php  
         include_once('./includes/footer.php')
