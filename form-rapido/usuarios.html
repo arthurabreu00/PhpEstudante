@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="container">
+          <h1 class="text-center mt-1">Cadastro de Usuarios </h1>
+            <form class="form-auto"  action="class/Insert.php" method="POST">
+
+                    <div class="form-group">
+                      <label for="nome"> Nome completo</label>
+                      <input type="text" class="form-control" id="nome" name="nome" placeholder="Welligtin TOP">
+                    </div>
+
+                    <div class="form-row">
+                    <div class="form-group col-md-12">
+                      <label for="endereco"> Endereço </label>
+                      <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Rua dos bobos">
+                    </div>
+                    </div>
+         
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="cargo">  Cargo  </label>
+                            <input type="text" class="form-control" id="cargo" name="cargo" placeholder="Rua dos bobos">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="salario">  Salário  </label>
+                            <input type="text" class="form-control" id="salario"name="salario" placeholder="R$ 123.000">
+                        </div>
+                    </div>
+                
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="cpf">CPF</label>
+                        <input type="text" class="form-control" id="cpf" name="cpf">
+                      </div>
+
+                      <div class="form-group col-md-6">
+                          <label for="telefone"> Telefone </label>
+                          <input type="text" class="form-control" name="telefone" id="telefone">
+                        </div>
+
+
+                      <div class="form-group col-md-6">
+                        <label for="dataNasc"> Data de nascimento </label>
+                        <input type="date" class="form-control" id="dataNasc" name="dataNasc">
+                      </div>
+                    </div>
+
+                    <div class="form-row mb-3">
+                        <div class="form-group col-md-6">
+                            <div class="form-check">
+                              <input class="form-check-input temp"  id="temp" name="temp" type="checkbox" id="temp">
+                              <label class="form-check-label" for="temp">
+                                Temporario
+                              </label>
+                            </div>
+                          </div>
+                    </div>
+       
+
+
+                    <button type="submit" class="btn btn-primary w-100"> Cadastrar  </button>
+                  </form>
+      </div>
+
+      <script>
+        const temp = document.querySelector('.temp');
+        const form = document.querySelector('input[type="date"]').parentElement.parentElement;
+
+        console.log(form);
+        
+        const div = document.createElement('div');
+        div.className = 'form-group col-md-6';
+        div.innerHTML += 
+            `
+            <label for="data"> Data de Termino do contrato </label>
+                        <input type="date" class="form-control">
+                        `;
+
+        temp.addEventListener('change',e =>{
+
+          if(temp.checked){
+            form.appendChild(div);
+          }else{
+            form.removeChild(div);
+          }
+          
+        });
+
+      </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
