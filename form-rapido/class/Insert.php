@@ -46,7 +46,7 @@
             $nome = $_POST['nome'];
 
             $this -> Sql -> query("INSERT INTO tb_funcionario(nm_func,end_func,cargo_func,sal_func,cpf_func,tel_func,data_nasc_func,temp_func) VALUES (:nome,:endereco,:cargo,:salario,:cpf,:telefone,:dataNasc,:temp)",array(
-
+                ""
             ));
         }
         

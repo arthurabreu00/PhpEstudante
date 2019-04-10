@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <title> Notícias </title>
@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse mr-6" id="collapsibleNavId">
             <ul class="navbar-nav flex-collum ml-md-auto d-md-flex">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.php"> Noticias </a>
+                    <a class="nav-link" href="noticia.php"> Noticias </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Administração</a>
@@ -45,11 +45,11 @@
 					<form class="form-login px-4 py-3">
 						<div class="form-group">
 						  <label> Usuário </label>
-						  <input type="text" id="user" name="user"  class="form-control" placeholder="Usuário">
+						  <input type="text" id="user" name="user" data-item="Usuario"  class="form-control" placeholder="Usuário">
 						</div>
 						<div class="form-group">
 						  <label>Senha</label>
-						  <input type="password"id="password" name="password" class="form-control" placeholder="Senha">
+						  <input type="password"id="password" name="password" data-item="Senha" class="form-control" placeholder="Senha">
 						</div>
 						<button type="submit" class="btn btn-primary"> Entrar </button>
 						</form>

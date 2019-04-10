@@ -37,16 +37,9 @@ function initEvents() {
             form.submit(); // Se não há nenhum elemento com erro, faça o submit.
         }
 
-
-    
     });
 
-
-
-
 }
-
-
 
 function validationEmail(){ // Função para validação do e-mail.
 
@@ -62,12 +55,13 @@ function validationEmail(){ // Função para validação do e-mail.
     return true; // Caso contrario, retorna verdadeiro.
 }
 
-function validationTelefone(){
-    const telefone = document.querySelector('#telefone');
+function validationTelefone(){ // Função para validação do telefone.
+
+    const telefone = document.querySelector('#telefone'); // Selecionando o input telefone.
 
     if(telefone){
         const regexTelefone = telefone.value.match(/(\(\d{2}\)\s?)?\d{4,5}(-)?\d{4}/g); // Expressão regular para verificação de regras do Telefone.
-        if(!regexTelefone || regexTelefone == "") addAlert(telefone,"Telefone Invalido");
+        if(!regexTelefone || regexTelefone == "") addAlert(telefone,"Telefone Invalido"); // Se não h´
         return false;
     }
 

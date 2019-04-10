@@ -18,14 +18,14 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                 </div>
-                <input id="user" name="user"   class="form-control" placeholder="Usuário" type="text">
+                <input id="user" name="user" data-item="Usuário" class="form-control" placeholder="Usuário" type="text">
             </div>
 
             <div class="form-group input-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                 </div>
-                <input class="form-control" id="password" name="password"  placeholder="Senha" type="password">
+                <input class="form-control" id="password" name="password" data-item="Senha" placeholder="Senha" type="password">
             </div>
 
 
@@ -40,5 +40,5 @@
 
 </div>
 <!--container end.//-->
-
+<script src="js/login.js"></script>
 <?php include_once('./includes/footer.php') ?>
