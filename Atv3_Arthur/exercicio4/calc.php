@@ -1,6 +1,8 @@
 <?php
 
-$celsius = $_POST['num1'];
-$fahrenheit = $celsius * (9/5) + 32;
+$distanciaPecorrida = $_POST['num1'];
+$tempoGasto = $_POST['num2'];
 
-echo "$celsius Cº equivale á $fahrenheit Fº";
+$velocidadeMedia = $distanciaPecorrida / $tempoGasto;
+
+echo "A velocidade média foi $velocidadeMedia km/h.";

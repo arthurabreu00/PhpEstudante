@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Exercicio 1 </title>
-</head>
-<body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercicio 4</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Atividade 4</h1>
+      <form action="calc.php" method="post">
+        <label for="num1"> Digite a distância pecorrida </label>
+        <input name="num1" id="num1" placeholder="Em Quilômetros..." />
 
-    <form action="calc.php" method="post">
-        
-    </form>
-
-    <script src="../geradorDeInput.js"></script>
-    <script> 
-        gerarInputs(2);
-    </script>
-</body>
+        <label for="num2"> Digite a distância pecorrida </label>
+        <input name="num2" id="num2" placeholder="Em Horas..." />
+        <button>Calcular</button>
+      </form>
+    </div>
+  </body>
 </html>
