@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $nome = $_POST['nome']; // Informações recebidas via post
 $dataNascimento = $_POST['data'];
@@ -13,6 +14,8 @@ $lastRa = mysqli_fetch_array($firstQuery)[0];
 $lastRa++;
 
 $query = "INSERT INTO alunos VALUES ('$lastRa','$nome','$anoAdmissao','$dataNascimento')";
+
+
 $_SESSION['mensagem'] =  mysqli_query($conn, $query) ?
     '
 <div class="alert alert-success alert-dismissible fade show" role="alert">

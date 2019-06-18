@@ -48,14 +48,17 @@ $maxPages = round($numTotal / $maxItens); // Número total de paginas retornadas
                     </thead>
                     <tbody>
                         <?php
+                        // Mostrando dados do banco.
                         while ($nome = $execute->fetch_assoc()) {
                             ?>
                         <tr>
                             <td>
-                                <?php echo utf8_encode($nome['id']) ?>
+                                <?php echo utf8_encode($nome['id']);
+                                    ?>
                             </td>
                             <td>
-                                <?php echo utf8_encode($nome['nome']) ?>
+                                <?php echo utf8_encode($nome['nome'])
+                                    ?>
                             </td>
                         </tr>
 

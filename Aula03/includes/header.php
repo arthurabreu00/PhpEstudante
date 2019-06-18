@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!doctype html>
 <html lang="pt-BR">
 
@@ -25,7 +26,7 @@
         </button>
         <div class="collapse navbar-collapse mr-6" id="collapsibleNavId">
             <ul class="navbar-nav flex-collum ml-md-auto d-md-flex">
-                <li class="nav-item active">
+                <li class="nav-item ">
                     <a class="nav-link" href="noticia.php"> Noticias </a>
                 </li>
                 <li class="nav-item">
@@ -35,33 +36,57 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contato.php">Contato</a>
                 </li>
+
+                <?php if (!isset($_SESSION['logged']) || !$_SESSION['logged']) : ?>
                 <li class="nav-item dropdown active">
                     <a class="nav-link btn btn-primary dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                         role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Login
                     </a>
-               
-                    <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end"  aria-labelledby="navbarDropdownMenuLink">
-					<form class="form-login px-4 py-3">
-						<div class="form-group">
-						  <label> Usuário </label>
-						  <input type="text" id="user" name="user" data-item="Usuario"  class="form-control" placeholder="Usuário">
-						</div>
-						<div class="form-group">
-						  <label>Senha</label>
-						  <input type="password"id="password" name="password" data-item="Senha" class="form-control" placeholder="Senha">
-						</div>
-						<button type="submit" class="btn btn-primary"> Entrar </button>
-						</form>
-						<hr class="dropdown-divider">
-		
-						<a class="dropdown-item" href="#">Esqueceu a senha?</a>
-		
+
+                    <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end"
+                        aria-labelledby="navbarDropdownMenuLink">
+                        <form class="form-login px-4 py-3" method="POST" action="authentication.php">
+                            <div class="form-group">
+                                <label> Usuário </label>
+                                <input type="text" id="user" name="user" data-item="Usuario" class="form-control"
+                                    placeholder="Usuário">
+                            </div>
+                            <div class="form-group">
+                                <label>Senha</label>
+                                <input type="password" id="password" name="password" data-item="Senha"
+                                    class="form-control" placeholder="Senha">
+                            </div>
+                            <button type="submit" class="btn btn-primary"> Entrar </button>
+                        </form>
+                        <hr class="dropdown-divider">
+
+                        <a class="dropdown-item" href="#">Esqueceu a senha?</a>
+
+                    </div>
+                </li>
+                <?php endif ?>
+
+                <li class="nav-item dropdown active"></li>
+                <?php if (isset($_SESSION['logged']) || $_SESSION['logged']) : ?>
+
+                <li class="nav-item dropdown active">
+                    <a class="nav-link btn btn-primary dropdown-toggle" href="#" id="logado" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i> Bem vindo
+                        <?php echo $_SESSION['name'] ?></a>
+
+
+                    <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" aria-labelledby="logado">
+                        <div class="form-login px-4 py-3">
+                            <i class="fas fa-cogs"></i>
+                            <a href="logout.php"> Sair </a>
+                        </div>
+                        <hr class="dropdown-divider">
                     </div>
                 </li>
 
-                <li class="nav-item dropdown active"></li>
-
+                <?php endif ?>
 
 
 

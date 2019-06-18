@@ -36,14 +36,17 @@
             <div class="mt-2">
 
                 <?php
-        session_start();
+                session_start();
 
-        echo $_SESSION['mensagem'];
-        ?>
+                echo isset($_SESSION['mensagem']) ? $_SESSION['mensagem'] : '';
+                ?>
             </div>
 
     </div>
     </form>
+
+    <?php include 'select.php' ?>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

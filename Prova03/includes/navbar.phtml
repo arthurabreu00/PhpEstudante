@@ -8,14 +8,18 @@
             <li class="nav-item">
                 <a class="nav-link" href="index.php">Home </a>
             </li>
+            <?php if ($_SESSION['perfil'] == 1) : ?>
             <li class="nav-item ml-3">
                 <a class="nav-link btn btn-success" href="cadastro.php" role="button"> Cadastrar úsuario </a>
             </li>
+            <?php endif ?>
         </ul>
 
         <div class="my-2 my-lg-0 text-white">
             Bem-Vindo <?php echo $_SESSION['nome'] ?>
+
             <button id="logout" class="btn btn-primary my-2 my-sm-0">Sair</button>
+
         </div>
     </div>
 </nav>
