@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.php"> Atividade 04 </a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"> <i
+            class="fas fa-bars    "></i> </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="index.php">Home </a>
+            </li>
+            <?php if ($_SESSION['perfil'] == 1) : ?>
+            <li class="nav-item ml-3">
+                <a class="nav-link btn btn-success" href="cadastro.php" role="button"> Cadastrar úsuario </a>
+            </li>
+            <?php endif ?>
+        </ul>
+
+        <div class="my-2 my-lg-0 text-white">
+            Bem-Vindo <?php echo $_SESSION['nome'] ?>
+
+            <button id="logout" class="btn btn-primary my-2 my-sm-0">Sair</button>
+
+        </div>
+    </div>
+</nav>
