@@ -5,7 +5,7 @@ header("Content-Transfer-Encoding: binary");
 header("Pragma: no-cache");
 
 require_once 'bd.php';
-$results = [];
+$results = [['id', 'titulo', 'subtitulo', "user", 'perfil', "algo", 'data', 'id_menu']];
 $res = mysqli_query($conn, "SELECT * FROM noticia");
 
 while ($rows = mysqli_fetch_assoc($res)) {
