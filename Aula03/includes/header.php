@@ -26,12 +26,8 @@
         </button>
         <div class="collapse navbar-collapse mr-6" id="collapsibleNavId">
             <ul class="navbar-nav flex-collum ml-md-auto d-md-flex">
-                <li class="nav-item ">
-                    <a class="nav-link" href="noticia.php"> Noticias </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Administração</a>
-                </li>
+
+
 
                 <li class="nav-item">
                     <a class="nav-link" href="contato.php">Contato</a>
@@ -67,8 +63,12 @@
                 </li>
                 <?php endif ?>
 
+                <?php if (isset($_SESSION['logged']) && $_SESSION['logged']) : ?>
                 <li class="nav-item dropdown active"></li>
-                <?php if (isset($_SESSION['logged']) || $_SESSION['logged']) : ?>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="admin.php">Administração</a>
+                </li>
 
                 <li class="nav-item dropdown active">
                     <a class="nav-link btn btn-primary dropdown-toggle" href="#" id="logado" role="button"
